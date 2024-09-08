@@ -11,7 +11,7 @@ public class NumerosDediasEnunMes {
         System.out.print("Ingrese el mes (1-12): ");
         int mes = scanner.nextInt();
         System.out.print("Ingrese el año: ");
-        int año = scanner.nextInt();
+        int ano = scanner.nextInt();
 
         // Verificar si el mes es válido
         if (mes < 1 || mes > 12) {
@@ -20,7 +20,7 @@ public class NumerosDediasEnunMes {
         }
 
         // Determinar si el año es bisiesto
-        boolean esBisiesto = (año % 4 == 0 && año % 100 != 0) || (año % 400 == 0);
+        boolean esBisiesto = (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
 
         // Determinar el número de días en el mes
         int dias;
@@ -49,7 +49,7 @@ public class NumerosDediasEnunMes {
         }
 
         // Mostrar el número de días en el mes
-        System.out.println("El mes " + mes + " del año " + año + " tiene " + dias + " días.");
+        System.out.println("El mes " + mes + " del año " + ano + " tiene " + dias + " días.");
 
         scanner.close();
     }
